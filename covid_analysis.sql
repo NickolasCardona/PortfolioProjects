@@ -54,7 +54,8 @@ JOIN covid_vaccinations vac
 	ON dea.location = vac.location AND dea.date = vac.date
 WHERE dea.continent IS NOT NULL
 )
-SELECT *, (RollingPeopleVaccinated/Population) * 100 AS rolling_percentage;
+SELECT *, (RollingPeopleVaccinated/Population) * 100 AS rolling_percentage
+FROM PopVsVac;
 
 
 CREATE TEMPORARY TABLE max_vac
