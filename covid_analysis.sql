@@ -60,8 +60,8 @@ FROM PopVsVac;
 
 CREATE TEMPORARY TABLE max_vac
 (
-Continent text,
-Location text,
+Continent varchar(255),
+Location varchar(255),
 Population bigint,
 Total_Vaccinations int,
 Percent_Pop_Vaccinated float
